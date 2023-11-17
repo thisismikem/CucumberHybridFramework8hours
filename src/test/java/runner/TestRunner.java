@@ -13,5 +13,8 @@ import io.cucumber.junit.CucumberOptions;
 						 "pretty",
 						 "html:target/CucumberReports/report.html",
 						 "json:target/CucumberReports/report.json"
-						})
+						}//,
+				// tags = "@important or @regression"
+				)
+
 public class TestRunner {}
