@@ -5,3 +5,4 @@ target/
 *.ear
 *.logs
 .idea/
+test-output/

@@ -23,7 +23,7 @@ And User enters invalid password "1234567890" into password field
 And User clicks on Login button
 Then User should get a proper warning message about credentials mismatch
 
-@smoke
+@smoke @important
 Scenario: Login with valid email and invalid password
 When User enters valid email address "amotooricap9@gmail.com" into email field
 And User enters invalid password "1234567890" into password field
