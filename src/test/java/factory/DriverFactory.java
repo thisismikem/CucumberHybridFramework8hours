@@ -21,9 +21,9 @@ public class DriverFactory {
 		
 		if(browserName.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
-	        options.addArguments("headless");
-	        options.addArguments("window-size=1400,800");       
-	        options.addArguments("disable-gpu");
+//	        options.addArguments("headless");
+//	        options.addArguments("window-size=1400,800");
+//	        options.addArguments("disable-gpu");
 	        
 			driver = new ChromeDriver(options);
 			
