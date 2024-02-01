@@ -3,6 +3,7 @@ C:\projects\selenium\CucumberHybridFramework8hours\src\test\java\utils\ElementUt
 C:\projects\selenium\CucumberHybridFramework8hours\src\test\java\pages\RegisterPage.java
 C:\projects\selenium\CucumberHybridFramework8hours\src\test\java\pages\LoginPage.java
 C:\projects\selenium\CucumberHybridFramework8hours\src\test\java\pages\HomePage.java
+C:\projects\selenium\CucumberHybridFramework8hours\src\test\java\pages\BasePage.java
 C:\projects\selenium\CucumberHybridFramework8hours\src\test\java\factory\DriverFactory.java
 C:\projects\selenium\CucumberHybridFramework8hours\src\test\java\utils\ConfigReader.java
 C:\projects\selenium\CucumberHybridFramework8hours\src\test\java\runner\TestRunner.java

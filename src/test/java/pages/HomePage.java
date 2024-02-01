@@ -8,17 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 import utils.CommonUtils;
 import utils.ElementUtils;
 
-public class HomePage {
-	
-	WebDriver driver;
-	private ElementUtils elementUtils;
-	
+public class HomePage extends BasePage {
+
 	public HomePage(WebDriver driver) {
-		
-		this.driver = driver;
-		PageFactory.initElements(driver,this);
-		elementUtils = new ElementUtils(driver);
-		
+		super(driver);
 	}
 	
 	@FindBy(xpath="//span[text()='My Account']")

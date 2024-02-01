@@ -1,6 +1,5 @@
 package stepdefinitions;
 
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import factory.DriverFactory;
@@ -9,6 +8,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.HomePage;
 import pages.SearchResultsPage;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class Search {
 	
@@ -41,7 +43,7 @@ public class Search {
 	@Then("User should get valid product displayed in search results")
 	public void user_should_get_valid_product_displayed_in_search_results() {
 	
-		Assert.assertTrue(searchResultsPage.displayStatusOfValidProduct());
+		assertTrue(searchResultsPage.displayStatusOfValidProduct());
 	  
 	}
 
@@ -56,7 +58,7 @@ public class Search {
 	@Then("User should get a message about no product matching")
 	public void user_should_get_a_message_about_no_product_matching() {
 	
-		Assert.assertEquals("There is no product that matches the search criteria.",searchResultsPage.getMessageText());
+		assertEquals("There is no product that matches the search criteria.",searchResultsPage.getMessageText());
 		
 	}
 

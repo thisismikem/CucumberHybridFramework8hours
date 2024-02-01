@@ -8,25 +8,18 @@ import org.openqa.selenium.support.PageFactory;
 import utils.CommonUtils;
 import utils.ElementUtils;
 
-public class SearchResultsPage {
-	
-	WebDriver driver;
-	private ElementUtils elementUtils;
-	
+public class SearchResultsPage extends BasePage {
+
 	public SearchResultsPage(WebDriver driver) {
-		
-		this.driver = driver;
-		PageFactory.initElements(driver,this);
-		elementUtils = new ElementUtils(driver);
-		
+		super(driver);
 	}
-	
+
 	@FindBy(linkText="HP LP3065")
 	private WebElement validHPProduct;
 	
 	@FindBy(xpath="//input[@id='button-search']/following-sibling::p")
 	private WebElement messageText;
-	
+
 	public boolean displayStatusOfValidProduct() {
 		
 		return elementUtils.displayStatusOfElement(validHPProduct,CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
